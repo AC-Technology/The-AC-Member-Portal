@@ -1,0 +1,12 @@
+Refresh Token = 1000.10b7093daed59988e822e80a3d318870.2c48860af9fddcd0708f0796148eaf28
+Client ID = 1000.KEBQXHD7HKL3F2RDRS0I3HNG1PES9W
+Client Secret = ca24ffdd275fb83d07fe63d6b766ac7e7ac016aa56
+
+{
+  access_token: '1000.427e6c8686012f94afa39e5c1667b364.3fc11fab66a9407fffc11b9f3d4ae771',
+  refresh_token: '1000.10b7093daed59988e822e80a3d318870.2c48860af9fddcd0708f0796148eaf28',
+  scope: 'ZohoCRM.modules.ALL ZohoCRM.coql.READ',
+  api_domain: 'https://www.zohoapis.com',
+  token_type: 'Bearer',
+  expires_in: 3600
+}

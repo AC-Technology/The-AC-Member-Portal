@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="JS/zohosdk.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/helper_functions.js"></script>
+    <link href="CSS/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="tab">
+        <button id="Overview_Tab" class="tablinks">Overview</button>
+        <button id="YTD_Tab" class="tablinks">Year to Date</button>
+        <button id="R12_Tab" class="tablinks">Rolling 12</button>
+        <button id="Most_Recent_Tab" class="tablinks">AC Most Recent Report Months</button>
+    </div>
+    <div class="filter-container flexed f-col">
+        <div class="input-container-1 flexed f-col">
+            <p>Change Data</p>
+            <select class="type_of_data_select" id="type_of_data">
+                <option value="">Direct Written Premium</option>
+                <option value="">Policies In Force</option>
+                <option value="">Incurred Loss</option>
+            </select>
+        </div>
+        <div class="input-container-2 flexed f-col">
+            <p>Filter by Carrier</p>
+            <select class="carrier_select" id="carrier">
+            </select>
+        </div>
+        <div class="input-container-3 flexed f-col">
+            <p>Filter by Year</p>
+            <select class="year_select" id="year">
+                <option value="">All Years</option>
+            </select>
+        </div>
+        <div class="input-container-4 flexed f-col">
+            <p>Filter by Month</p>
+            <select class="month_select" id="month">
+                <option value="">All Months</option>
+                <option value="">January</option>
+                <option value="">February</option>
+                <option value="">March</option>
+                <option value="">April</option>
+                <option value="">May</option>
+                <option value="">June</option>
+                <option value="">July</option>
+                <option value="">August</option>
+                <option value="">September</option>
+                <option value="">October</option>
+                <option value="">November</option>
+                <option value="">December</option>
+            </select>
+        </div>
+        <div class="input-container-5 flexed f-col">
+            <p>Filter by Agency</p>
+            <select class="agency_select" id="agency">
+            </select>
+        </div>
+    </div>
+    <div id="Warning_Modal" class="warning-modal f-center">
+        <img class="close-warning-modal" src="Images/close.svg" alt id="close/11221122112211222">
+        <p class="warning-modal-message"></p>
+    </div>
+    <div id="Overview" class="tabcontent">
+        <div class="DWP_YTD">
+            <!-- <h4>Direct Written Premium Year to Date (All Carriers)</h4> -->
+            <canvas class="DWP_YTD_Bar_Chart"></canvas>
+            <!-- <canvas class="DWP_YTD_Pie_Chart"></canvas> -->
+        </div>
+        <div class="DWP_R12">
+            <!-- <h4>Direct Written Premium Rolling 12 (All Carriers)</h4> -->
+            <canvas class="DWP_R12_Bar_Chart"></canvas>
+            <!-- <canvas class="DWP_R12_Pie_Chart"></canvas> -->
+        </div>
+        <div class="NB_YTD">
+            <!-- <h4>New Business Year to Date Each Month (All Carriers)</h4> -->
+            <canvas class="NB_YTD_Bar_Chart"></canvas>
+            <!-- <canvas class="NB_YTD_Pie_Chart"></canvas> -->
+        </div>
+        <div class="NB_R12">
+            <!-- <h4>New Business Rolling 12 (All Carriers) </h4> -->
+            <canvas class="NB_R12_Bar_Chart"></canvas>'
+            <!-- <canvas class="NB_R12_Pie_Chart"></canvas> -->
+        </div>
+    </div>
+    <div id="YTD" class="tabcontent">
+        <div class="DWP_YTD">
+            <!-- <h4>Direct Written Premium Year to Date (All Carriers)</h4> -->
+            <canvas class="DWP_YTD_Bar_Chart"></canvas>
+            <!-- <canvas class="DWP_YTD_Pie_Chart"></canvas> -->
+        </div>
+        <div class="NB_YTD">
+            <!-- <h4>New Business Year to Date (All Carriers)</h4> -->
+            <canvas class="NB_YTD_Bar_Chart"></canvas>
+            <!-- <canvas class="NB_YTD_Pie_Chart"></canvas> -->
+        </div>
+    </div>
+    <div id="R12" class="tabcontent">
+        <div class="DWP_R12">
+            <!-- <h4>Direct Written Premium Rolling 12 (All Carriers)</h4> -->
+            <canvas class="DWP_R12_Bar_Chart"></canvas>
+            <!-- <canvas class="DWP_R12_Pie_Chart"></canvas> -->
+        </div>
+        <div class="NB_R12">
+            <!-- <h4>New Business Rolling 12 (All Carriers)</h4> -->
+            <canvas class="NB_R12_Bar_Chart"></canvas>
+            <!-- <canvas class="NB_R12_Pie_Chart"></canvas> -->
+        </div>
+    </div>
+    <div id="Most_Recent">
+        <div class="Most_Recent_Month">
+            <div class="grid-container">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
