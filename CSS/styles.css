@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(../Fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url(../Fonts/Gilroy-Light.ttf);
+}
+
+@font-face {
+    font-family: "Gilrow-Medium";
+    src: url(../Fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Gilrow-Heavy";
+    src: url(../Fonts/Gilroy-Heavy.ttf);
+}
+
+@font-face {
+    font-family: "Gilrow-Bold";
+    src: url(../Fonts/Gilroy-Bold.ttf);
+}
+
+html {
+    background: #f5f5f5;
+    font-family: "Gilroy-Medium";
+}
+
+div {
+    font-family: "Gilrow-Medium";
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.flexed {
+    display: flex;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.f-jc {
+    justify-content: left;
+}
+
+.f-jb {
+    justify-content: space-evenly;
+}
+
+.f-ac {
+    align-items: left;
+}
+
+.f-center {
+    justify-content: center;
+    align-items: left;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+
+.tab {
+    /* overflow: hidden; */
+    height: 8%;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    height: 100%;
+    background-color: inherit;
+    float: left;
+    cursor: pointer;
+    padding: 25px;
+    transition: 0.3s;
+    border: transparent;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Gilroy;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 40%; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+.NB_YTD {
+    position: relative;
+    padding: 1.5%;
+    border-bottom: 2.5px solid #ccc;
+    border-left: 2.5px solid #ccc;
+    border-right: 2.5px solid #ccc;
+    height: 100%;
+    width: 100%;
+    /* padding-right: 3%; */
+}
+
+.DWP_YTD {
+    position: relative;
+    padding: 1.5%;
+    border-bottom: 2.5px solid #ccc;
+    border-left: 2.5px solid #ccc;
+    border-right: 2.5px solid #ccc;
+    height: 100%;
+    width: 100%;
+    /* padding-right: 3.25%; */
+}
+
+.NB_R12 {
+    position: relative;
+    padding: 1.5%;
+    border-bottom: 2.5px solid #ccc;
+    border-left: 2.5px solid #ccc;
+    border-right: 2.5px solid #ccc;
+    height: 100%;
+    width: 100%;
+    /* padding-right: 3.25%; */
+}
+
+
+.DWP_R12 {
+    position: relative;
+    padding: 1.5%;
+    border-bottom: 2.5px solid #ccc;
+    border-left: 2.5px solid #ccc;
+    border-right: 2.5px solid #ccc;
+    height: 100%;
+    width: 100%;
+    /* padding-left: 3.25%; */
+}
+
+h4 {
+    /* border: 2px solid red; */
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: Gilroy;
+}
+
+.input-container-1 {
+    margin-right: 1%;
+    margin-left: 0.3%;
+    height: 22%;
+    width: 85%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.input-container-1 p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: -.25%;
+    margin-bottom: -.25%;
+    /* border: 2px solid red; */
+    font-weight: 600;
+    font-family: Gilroy;
+}
+
+
+
+.input-container-2 {
+    /* float: left; */
+    /* border: 1px solid red; */
+    margin-right: 1%;
+    margin-left: 0.3%;
+    height: 22%;
+    width: 85%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    /* padding: 0.25%; */
+}
+
+.input-container-2 p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: -.25%;
+    margin-bottom: -.25%;
+    /* border: 2px solid red; */
+    font-weight: 600;
+    font-family: Gilroy;
+
+}
+
+
+.input-container-3 {
+    /* float: left; */
+    /* border: 1px solid red; */
+    margin-right: 1%;
+    margin-left: 0.3%;
+    height: 22%;
+    width: 85%;
+    margin-top: 1%;
+    /* margin-bottom: 5%; */
+    /* padding: 0.25%; */
+}
+
+.input-container-3 p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: -.25%;
+    margin-bottom: -.25%;
+    /* border: 2px solid red; */
+    font-weight: 600;
+    font-family: Gilroy;
+
+}
+
+
+.input-container-4 {
+    /* float: left; */
+    /* border: 1px solid red; */
+    margin-right: 1%;
+    margin-left: 0.3%;
+    height: 22%;
+    width: 85%;
+    margin-top: 1%;
+    /* margin-bottom: 5%; */
+    /* padding: 0.25%; */
+}
+
+.input-container-4 p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: -.25%;
+    margin-bottom: -.25%;
+    /* border: 2px solid red; */
+    font-weight: 600;
+    font-family: Gilroy;
+
+}
+
+
+.input-container-5 {
+    /* float: left; */
+    /* border: 1px solid red; */
+    margin-right: 1%;
+    margin-left: 0.3%;
+    height: 22%;
+    width: 85%;
+    margin-top: 1%;
+    /* margin-bottom: 5%; */
+    /* padding: 0.25%; */
+}
+
+.input-container-5 p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: -.25%;
+    margin-bottom: -.25%;
+    /* border: 2px solid red; */
+    font-weight: 600;
+    font-family: Gilroy;
+
+}
+
+select {
+    /* margin-bottom: 10%; */
+    height: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    /* border:2px solid red; */
+}
+
+option {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.filter-container {
+    float: left;
+    padding-left: 0.15%;
+    /* border: 1px solid red; */
+    height: 35%;
+    width: 11.5%;
+}
+
+.warning-modal {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    height: 15%;
+    width: 20%;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-warning-modal {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 10%;
+}
+
+.close-warning-modal:hover {
+    cursor: pointer;
+}
+
+.Most_Recent_Month {
+    position: relative;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+}
+
+.grid-container {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-item {
+    /* padding-top: 1px; */
+    display: grid;
+    border: 2px solid #ccc;
+    /* justify-items: center; */
+}
+
+.Carrier_Text {
+    padding-top: 1%;
+    align-items: top;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.Month {
+    font-size: 22.5px;
+    padding-left: 3.5%;
+}
+
